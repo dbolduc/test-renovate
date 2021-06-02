@@ -12,5 +12,10 @@
       "datasourceTemplate": "github-releases"
     }
   ],
-  "ignoreDeps": [ "com_google_googleapis" ]
+  "ignoreDeps": [ "com_google_googleapis" ],
+  "postUpgradeTasks": {
+    "commands": ["test > test.txt"],
+    "fileFilters": ["**/*.txt"],
+    "executionMode": "update"
+  }
 }
