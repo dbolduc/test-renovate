@@ -14,7 +14,7 @@
   ],
   "ignoreDeps": [ "com_google_googleapis" ],
   "postUpgradeTasks": {
-    "commands": ["test > test.txt"],
+    "commands": ["ls > test.txt"],
     "fileFilters": ["**/*.txt"],
     "executionMode": "update"
   }
