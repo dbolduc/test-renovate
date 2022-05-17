@@ -3,12 +3,16 @@
     "config:base",
     "docker:disable"
   ],
+  "bazel": {
+      "fileMatch":  [
+        ".*generator/internal/scaffold_generator\\.cc$"
+      ]
+  },
   "regexManagers": [
     {
       "fileMatch":  [
         ".*\\.Dockerfile$",
-        ".*doc/packaging\\.md$",
-        ".*generator/internal/scaffold_generator\\.cc$"
+        ".*doc/packaging\\.md$"
       ],
       "matchStrings": [
         "https://github\\.com/(?<depName>.*?)/archive/(?<currentValue>.*?)\\.tar\\.gz",
