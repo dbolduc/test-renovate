@@ -1,1 +1,1 @@
-curl -sSL https://github.com/google/protobuf/archive/v3.17.0.tar.gz | \
+curl -sSL https://github.com/google/protobuf/archive/v22.2.tar.gz | \
